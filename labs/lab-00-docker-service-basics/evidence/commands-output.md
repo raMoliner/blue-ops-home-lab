@@ -94,3 +94,23 @@ blueops-web
                                  Dload  Upload  Total   Spent   Left   Speed
   0      0   0      0   0      0      0      0                              0
 curl: (56) Recv failure: Conexión reinicializada por la máquina remota
+
+## Revalidación de caída capturando stderr
+
+### Detener servicio
+blueops-web
+
+### Validar impacto HTTP con stderr capturado
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (7) Failed to connect to localhost port 8080 after 0 ms: Could not connect to server
+
+### Recuperar servicio
+blueops-web
+
+### Validar recuperación
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (56) Recv failure: Conexión reinicializada por la máquina remota
