@@ -114,3 +114,24 @@ blueops-web
                                  Dload  Upload  Total   Spent   Left   Speed
   0      0   0      0   0      0      0      0                              0
 curl: (56) Recv failure: Conexión reinicializada por la máquina remota
+
+## Revalidación final de recuperación
+
+### Estado del contenedor
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS         PORTS                                     NAMES
+6e3f1a2c9237   nginx     "/docker-entrypoint.…"   18 minutes ago   Up 7 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   blueops-web
+
+### Validación HTTP final
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0    896   0      0   0      0      0      0                              0  0    896   0      0   0      0      0      0                              0  0    896   0      0   0      0      0      0                              0
+HTTP/1.1 200 OK
+Server: nginx/1.31.3
+Date: Thu, 23 Jul 2026 16:20:01 GMT
+Content-Type: text/html
+Content-Length: 896
+Last-Modified: Wed, 15 Jul 2026 16:03:14 GMT
+Connection: keep-alive
+ETag: "6a57af42-380"
+Accept-Ranges: bytes
+

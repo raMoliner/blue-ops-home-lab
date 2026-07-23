@@ -152,6 +152,14 @@ Interpretación:
 
 El servicio fue recuperado correctamente y volvió a estar disponible por HTTP.
 
+## Observación durante recuperación
+
+Durante una revalidación posterior, inmediatamente después de iniciar el contenedor con `docker start`, una consulta HTTP devolvió:
+
+```text
+curl: (56) Recv failure: Conexión reinicializada por la máquina remota
+```
+
 ## Causa raíz
 
 La indisponibilidad fue causada por una detención manual controlada del contenedor durante el laboratorio.
