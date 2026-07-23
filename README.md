@@ -19,7 +19,7 @@ El foco es entender:
 
 | Lab | Nombre | Estado |
 | --- | --- | --- | 
-| Lab 00 | Docker Service Basics | En Progreso | 
+| Lab 00 | Docker Service Basics | Completado | 
 
 ## Principios 
 
